@@ -148,7 +148,13 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="System.Net.Http">
+      <Version>4.3.4</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="3.6.0.709228" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -156,5 +162,44 @@
       <Project>{BF1E7955-6F68-488F-932D-26F929AFAE2C}</Project>
       <Name>WeatherApp</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pressure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\weather.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\overlay.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cloudiness.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\gridcolor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\humidity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\place.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\wind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\listcolor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\grid.png" />
   </ItemGroup>
 </Project>

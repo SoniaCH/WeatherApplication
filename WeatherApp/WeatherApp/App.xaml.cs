@@ -1,8 +1,11 @@
-﻿using System;
+﻿
+using WeatherApp.Persistance;
+using WeatherApp.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
+//[assembly: ExportFont("Samantha.ttf")]
 namespace WeatherApp
 {
     public partial class App : Application
@@ -11,7 +14,10 @@ namespace WeatherApp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+           
+           
+
+            MainPage = new WeatherView();
         }
 
         protected override void OnStart()
